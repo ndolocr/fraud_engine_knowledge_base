@@ -1,7 +1,10 @@
 from django.shortcuts import render
 from django.http import JsonResponse
+from django.core.exceptions import ObjectDoesNotExist
 
 from rest_framework.decorators import api_view
+
+from KnowledgeBase.models import Rule
 
 # Create your views here.
 @api_view(['GET'])
