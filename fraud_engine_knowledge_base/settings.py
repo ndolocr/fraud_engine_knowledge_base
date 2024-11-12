@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'fraud_engine_knowledge_base.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'mysql.connector.django',
+        'NAME': 'rulebase',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST':'127.0.0.1',
+        'PORT':'8889',
     }
 }
 
