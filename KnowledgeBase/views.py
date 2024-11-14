@@ -126,24 +126,13 @@ def getRuleByNamespace(request, namespace):
 
 @api_view(["POST"])
 def save_request(request):
-    cr_account
-    dr_account
-    transaction_time
-    decision
-    name_space
-    request_payload
-    response_message
-    response_payload
-    response_status
     score
-
-    # cr_account = models.CharField(max_length=255,  null=True)
-    # dr_account = models.CharField(max_length=255,  null=True)
-    # transaction_time = models.DateTimeField(auto_now_add=False)
-    # decision = models.CharField(max_length=255,  null=True)
-    # name_space = models.CharField(max_length=255,  null=True)
-    # request_payload = models.CharField(max_length=255,  null=True)
-    # response_message = models.CharField(max_length=255,  null=True)
-    # response_payload = models.CharField(max_length=255,  null=True)
-    # response_status = models.CharField(max_length=255,  null=True)
-    # score = models.DecimalField(max_digits=15, decimal_places=2)
+    decision
+    cr_account
+    dr_account    
+    name_space
+    response_status
+    request_payload
+    transaction_time    
+    response_message
+    response_payload    
